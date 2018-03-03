@@ -24,6 +24,7 @@ app.set('views', path.join(__dirname,'src/view'))
 require('./src/index')(app)
 
 mongoose.connect('mongodb://localhost:27017/auth')
+mongoose.Promise = global.Promise
 
 //listen(porta, host, callback)
 //quando não passa nada no host () ele entende como host local.

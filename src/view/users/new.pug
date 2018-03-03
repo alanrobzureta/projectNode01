@@ -1,0 +1,17 @@
+extends ./../layout/main
+
+block content   
+    div(class="col-xs-12 col-md-12")
+        h2(class="text-center") Register New User
+        form(action="/users", method="post")
+            div(class="form-group")
+                input(type="text", name="name",id="name", placeholder="Name: ", class="form-group")   
+            div(class="form-group")
+                input(type="text", name="username", id="username", placeholder="Username: ", class="form-group")
+            div(class="form-group")
+                input(type="email", name="email", id="email", placeholder="Email: ", class="form-group")
+            div(class="form-group")
+                input(type="password", name="password", id="password", placeholder="Password: ", class="form-group")
+            div(class="form-group")
+                button(type="submit", class="btn btn-primary") Create
+        
