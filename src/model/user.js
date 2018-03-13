@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-require('mongoose-type-email')
+const mongoose = require('mongoose');
+require('mongoose-type-email');
 
 const User = new mongoose.Schema({
     name : {
@@ -20,4 +20,4 @@ const User = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('User', User)
+module.exports = mongoose.model('User', User);

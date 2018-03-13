@@ -1,10 +1,10 @@
 const User = require('../../model/user')
 
-module.exports = (req, res) => function () {
+module.exports = function(req, res) {
     console.log(req.body);
     User.create(req.body)
         .then((user) => {
-            return res.redirect('/')
+            return res.redirect('/');
         })
         .catch((error) => {
             console.log(error)
